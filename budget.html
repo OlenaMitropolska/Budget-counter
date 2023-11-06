@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/budget.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="/budget.css" />
+  </head>
+  <body>
+    <div class="balance">
+      <h2>Balance</h2>
+      <div class="number" id="number"></div>
+    </div>
+
+    <div class="info">
+      <div class="plus">
+        <h2>+</h2>
+        <div class="inputplus">
+          <input type="text" id="incomeInput" class="input" />
+          <button id="incomeButton">Received</button>
+        </div>
+      </div>
+
+      <div class="minus">
+        <h2>-</h2>
+        <div class="inputminus">
+          <input type="text" id="expenseInput" class="input" />
+          <button id="expenseButton">Paid</button>
+        </div>
+      </div>
+    </div>
 
     <script src="/budget.js"></script>
-</body>
+  </body>
 </html>

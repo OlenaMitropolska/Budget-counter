@@ -3,3 +3,58 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    padding: 40px;
+ 
+}
+
+.balance {
+    height: 40%;
+    width: 100%;
+    background-color: rgb(159, 159, 194);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+}
+.balance .number {
+    font-size: 4em;
+}
+
+.info {
+    height: 40%;
+width: 100%;
+background-color: rgb(177, 177, 213);
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: start;
+}
+.plus h2, .minus h2 {
+    font-size: 3em;
+}
+.plus, .minus {
+width: 50%;
+background-color: rgb(74, 20, 20);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+
+}
+
+.input {
+    font-size: 1.5em;
+}
+.plus button , .minus button {
+    font-size: 1.5em;
+}
+
