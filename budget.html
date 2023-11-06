@@ -25,21 +25,29 @@
     </div>
 
     <div class="info">
+
       <div class="plus">
         <h2>+</h2>
         <div class="inputplus">
-          <input type="text" id="incomeInput" class="input" />
+          <input placeholder="$"  type="text" id="incomeInput" class="input" />
+          <input placeholder="where from?" type="text" id="incomeMessageInput" class="incomeMessageInput">
           <button id="incomeButton">Received</button>
         </div>
       </div>
 
+
       <div class="minus">
         <h2>-</h2>
         <div class="inputminus">
-          <input type="text" id="expenseInput" class="input" />
+          <input placeholder="$" type="text" id="expenseInput" class="input" />
+          <input placeholder="what for?" type="text" id="expenseMessageInput" class="expenseMessageInput">
           <button id="expenseButton">Paid</button>
         </div>
       </div>
+
+      <div class="messageIncome" id="messageIncome"></div>
+      <div class="messageExpense" id="messageExpense"></div>
+
     </div>
 
     <script src="/budget.js"></script>

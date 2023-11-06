@@ -12,6 +12,14 @@ let expenseSum = document.getElementById("expenseSum")
 let expenseS = 0
 expenseSum.textContent = expenseS
 
+//stage 3
+let incomeMessageInput = document.getElementById("incomeMessageInput")
+let expenseMessageInput = document.getElementById("expenseMessageInput")
+let messageIncome = document.getElementById("messageIncome")
+let messageExpense = document.getElementById("messageExpense")
+// messageIncome.textContent = incomeMessageInput
+// messageExpense.textContent = expenseMessageInput
+
 
 const incomeButton = document.getElementById("incomeButton")
 const expenseButton = document.getElementById("expenseButton")
@@ -25,7 +33,10 @@ number.textContent = n
 incomeS += Number(incomeInput.value)
 incomeSum.textContent = incomeS
 
+messageIncome.textContent += incomeMessageInput.value
+
 incomeInput.value = ""
+incomeMessageInput.value = ""
 })
 
 expenseButton.addEventListener("click", function ()  {
@@ -36,7 +47,10 @@ expenseButton.addEventListener("click", function ()  {
     expenseS += Number(expenseInput.value)
     expenseSum.textContent = expenseS
 
+    messageExpense.textContent += expenseMessageInput.value
+
     expenseInput.value = ""
+    expenseMessageInput.value = ""
 })
 
 

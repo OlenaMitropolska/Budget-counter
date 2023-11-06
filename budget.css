@@ -8,8 +8,8 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    gap: 20%;
-    padding: 40px;
+    gap: 10%;
+    padding: 20px;
  
 }
 
@@ -41,7 +41,7 @@ align-items: center;
 }
 
 .info {
-    height: 40%;
+    height: 50%;
 width: 100%;
 background-color: rgb(177, 177, 213);
 display: flex;
@@ -55,6 +55,7 @@ align-items: start;
 }
 .plus, .minus {
 width: 50%;
+height: 30%;
 background-color: rgb(74, 20, 20);
 display: flex;
 flex-direction: column;
@@ -66,19 +67,51 @@ gap: 20px;
 input {
     border-radius: 10px;
     border: none;
-    outline: none;
     font-size: 1.5em;
+    padding: 0 5px;
     }
-    
-    
+
+    .input {
+width: 20%;
+    }
+    .inputplus, .inputminus {
+        display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 20px;
+    }
+    .incomeMessageInput, .expenseMessageInput {
+        width: 50%;
+        outline: none;
+       padding: 0 5px;
+    }
+
+
     button {
     padding: 5px;
     border-radius: 10px;
     border: none;
+    width: 20%;
     }
     
-    
+
 .plus button , .minus button {
     font-size: 1.5em;
 }
+
+.messageIncome , .messageExpense {
+    height: 70%;
+    width: 50%;
+    background-color: rgb(84, 84, 11);
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+ flex-direction: column;
+ overflow: auto;
+    gap: 20px;
+   
+}
+
+/* it does not work in column no idea why */
 
