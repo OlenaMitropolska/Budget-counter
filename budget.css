@@ -16,10 +16,11 @@ body {
 .balance {
     height: 40%;
     width: 100%;
-    background-color: rgb(159, 159, 194);
+    /* background-color: rgb(159, 159, 194); */
     display: flex;
     justify-content: center;
     font-size: 3em;
+    color: rgb(5, 48, 62);
 }
 .blnc {
     width: 60%;
@@ -34,7 +35,7 @@ body {
 
 .totalIncome, .totalExpense {
 width: 20%;
-background-color: aqua;
+/* background-color: aqua; */
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -43,7 +44,8 @@ align-items: center;
 .info {
     height: 50%;
 width: 100%;
-background-color: rgb(177, 177, 213);
+background-color: lightblue;
+border-radius: 10px;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
@@ -56,7 +58,7 @@ align-items: start;
 .plus, .minus {
 width: 50%;
 height: 30%;
-background-color: rgb(74, 20, 20);
+/* background-color: rgb(74, 20, 20); */
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -64,9 +66,13 @@ align-items: center;
 gap: 20px;
 }
 
+.minus {
+    border-left: 3px dotted rgb(85, 175, 205);
+}
+
 input {
     border-radius: 10px;
-    border: none;
+    border: 1px solid black;
     font-size: 1.5em;
     padding: 0 5px;
     }
@@ -85,13 +91,14 @@ gap: 20px;
         width: 50%;
         outline: none;
        padding: 0 5px;
+       border: 1px solid black;
     }
 
 
     button {
     padding: 5px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid black;
     width: 20%;
     }
     
@@ -103,14 +110,15 @@ gap: 20px;
 .messageIncome , .messageExpense {
     height: 70%;
     width: 50%;
-    background-color: rgb(84, 84, 11);
+    /* background-color: rgb(84, 84, 11); */
     font-size: 2em;
     display: flex;
+    flex-direction: column;
     align-items: center;
- flex-direction: column;
  overflow: auto;
-    gap: 20px;
-   
+}
+.messageExpense {
+    border-left: 3px dotted rgb(85, 175, 205);
 }
 
 /* it does not work in column no idea why */
